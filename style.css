@@ -2,16 +2,39 @@
   box-sizing: border-box;
 }
 
-
+.intro
+{
+  text-align: center;
+}
+/*Iteration 1: Set the block flow direction vertically from left to right using the "vertical" writing-mode command*/
 .header
 {
-   writing-mode: vertical-lr;
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: vertical-lr;
+   writing-mode: vertical-rl;  
+}
+/*Iteration 2: Set the block flow direction vertically from left to right using the "vertical" writing-mode command*/
+.article-1
+{
+  writing-mode: vertical-lr;
+}
+/*Iteration 3: Set the block flow direction from left to right using the "sideways" writing-mode command */
+.article-2
+{
+  writing-mode: sideways-lr;
+}
+/*Iteration 4: Set the block flow direction from right to left using the "sideways" writing-mode command */
+.article-3
+{
+   writing-mode: sideways-rl;
+}
+/*Default writing mode set by the browser*/
+.article-4
+{
+   writing-mode: horizontal-tb;
 }
 
+
 body {
-  background: #eee;
+
   color: #191919;
   font-family: 'Lato', sans-serif;
 }
@@ -39,6 +62,13 @@ img {
   margin: 24px;
   max-width: 1000px;
   position: relative;
+  background-color: lightskyblue;
+  border-radius: 5em;
+  border-color:black;
+  border-style: double;
+  border-bottom-right-radius: 0em;
+  padding: 50px;
+
 }
 
 .wrapper > * {
@@ -58,17 +88,24 @@ header:after {
   width: auto;
 }
 
+
+
 .article {
   text-align: right;
 }
 
 .featured-image-1 {
   grid-row: 2 / 3;
+  
+}
+.featured-image-1 img {
+  height: 600px;
 }
 
 .number-1 {
   grid-row: 2 / 4;
   padding: 60px;
+
 }
 
 .featured-image-2, .number-2 {
