@@ -52,6 +52,7 @@ img {
   height: auto;
   width: 100%;
 }
+
 .wrapper {
   display: grid;
   grid-gap: 20px;
@@ -71,6 +72,7 @@ img {
 .wrapper > * {
   grid-column: 1 / span 2;
 }
+
 .header {
   font-size: 1.5em;
   grid-row: 1 / 2;
